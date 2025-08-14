@@ -71,7 +71,7 @@ st.write(dfn)
 
 
 # Load the saved classification model
-load_clf = load('files/preeclampsia.joblib')
+load_clf = joblib.load("files/preeclampsia.joblib")
 
 # Apply model to make predictions
 prediction = load_clf.predict(input_df)
@@ -106,4 +106,5 @@ else:
     
     Although the risk appears low, it’s important to consider all factors in consultation with a healthcare provider.
     """)
+
 
