@@ -1,7 +1,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from joblib import load
+import joblib
 from PIL import Image
 
 # Set up the sidebar
@@ -106,5 +106,6 @@ else:
     
     Although the risk appears low, it’s important to consider all factors in consultation with a healthcare provider.
     """)
+
 
 
